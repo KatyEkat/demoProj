@@ -4,10 +4,10 @@ import Card from "../UI/Card";
 
 const UserList = (props) => {
   return (
-    <Card  className={S.users}>
+    <Card className={S.users}>
       <ul>
         {props.users.map((user) => (
-          <li>
+          <li key={user.id}>
             {user.name} ({user.age} years old)
           </li>
         ))}
