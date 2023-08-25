@@ -13,10 +13,10 @@ const addUserHandler = (uName, uAge) => {
 }
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UserList users={usersList}/>
-    </div>
+    </>
   );
 }
 
