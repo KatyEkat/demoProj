@@ -27,7 +27,7 @@ const ErrorModal = (props) => {
   return (
     <>
       {ReactDOM.createPortal(
-        <Backdrop onClick={props.onConfirm} />,
+        <Backdrop onConfirm={props.onConfirm} />,
         document.getElementById("background-root")
       )}
       {ReactDOM.createPortal(
