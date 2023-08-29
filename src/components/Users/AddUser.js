@@ -32,6 +32,8 @@ const AddUser = (props) => {
     }
 
     props.onAddUser(enteredName, enteredUserAge);
+    nameInputRef.current.value = "";
+    ageInputRef.current.value = "";
   };
 
   const errorHandler = () => {
